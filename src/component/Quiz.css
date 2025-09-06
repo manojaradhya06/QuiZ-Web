@@ -1,0 +1,112 @@
+.container {
+    max-width: 90%;
+    width: 650px;
+    margin: 50px auto 20px; /* smaller top margin for mobile */
+    background: white;
+    color: hsl(0, 0%, 15%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 12px;
+    padding: 20px 25px; /* smaller padding for mobile */
+}
+
+.container hr {
+    height: 2px;
+    border: none;
+    background: hsl(0, 0%, 44%);
+}
+
+.container h2 {
+    font-size: 20px; /* smaller for mobile */
+}
+
+.container ul li {
+    display: flex;
+    align-items: center;
+    height: 60px; /* smaller height for mobile */
+    padding-left: 10px;
+    border: 1px solid hsl(0, 0%, 41%);
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-size: 18px; /* smaller font */
+    cursor: pointer;
+}
+
+.container button {
+    margin: auto;
+    width: 160px; /* smaller width for mobile */
+    height: 55px; /* smaller height */
+    background-color: hsl(255, 50%, 54%);
+    color: white;
+    font-size: 18px; /* smaller font */
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.container button:hover{
+    background-color: hsl(255, 68%, 64%);
+
+}
+
+.container .index {
+    margin: auto;
+    font-size: 16px; /* smaller for mobile */
+}
+
+.container .correct {
+    background-color: hsl(156, 100%, 94%);
+    border-color: hsl(163, 100%, 41%);
+}
+
+.container .wrong {
+    background: hsl(0, 100%, 96%);
+    border-color: hsl(0, 100%, 65%);
+}
+
+/* Tablet */
+@media (min-width: 600px) {
+    .container {
+        padding: 30px 40px;
+        margin-top: 100px;
+    }
+    .container h2 {
+        font-size: 25px;
+    }
+    .container ul li {
+        height: 65px;
+        font-size: 20px;
+    }
+    .container button {
+        width: 180px;
+        height: 60px;
+        font-size: 22px;
+    }
+    .container .index {
+        font-size: 18px;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+    .container {
+        padding: 40px 50px;
+        margin-top: 150px;
+    }
+    .container h2 {
+        font-size: 27px;
+    }
+    .container ul li {
+        height: 70px;
+        font-size: 23px;
+    }
+    .container button {
+        width: 200px;
+        height: 65px;
+        font-size: 25px;
+    }
+    .container .index {
+        font-size: 20px;
+    }
+}

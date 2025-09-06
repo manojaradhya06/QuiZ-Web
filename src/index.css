@@ -1,0 +1,10 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+body{
+  height: 100vh;
+  background: linear-gradient(hsl(258, 75%, 84%),hsl(208, 68%, 62%));
+  font-family: sans-serif;
+}
